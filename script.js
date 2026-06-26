@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initScrollReveal();
   initSkillFilters();
   initProjectsSlider();
+  initMobileNavbar();
   initContactForm();
   initBackToTop();
 });
@@ -390,6 +391,30 @@ function initProjectsSlider() {
         }
       }
     ]
+  });
+}
+
+/* ==========================================================================
+   10. Auto-Close Mobile Navbar collapsed dropdown on link click
+   ========================================================================== */
+function initMobileNavbar() {
+  const navLinks = document.querySelectorAll('.custom-navbar .nav-link');
+  const menuCollapse = document.getElementById('navbarContent');
+  if (!navLinks.length || !menuCollapse) return;
+
+  navLinks.forEach(link => {
+    // Skip if it's the theme toggle button container
+    if (link.closest('.nav-item').querySelector('.theme-toggle-btn')) return;
+
+    link.addEventListener('click', () => {
+      const toggler = document.querySelector('.navbar-toggler');
+      const isCollapsed = window.getComputedStyle(toggler).display !== 'none';
+      
+      if (isCollapsed && menuCollapse.classList.contains('show')) {
+        const bsCollapse = bootstrap.Collapse.getOrCreateInstance(menuCollapse);
+        bsCollapse.hide();
+      }
+    });
   });
 }
 
