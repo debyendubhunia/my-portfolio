@@ -218,7 +218,7 @@ a:hover {
   border: none;
   background: transparent;
   padding: 8px;
-  border-radius: 8px;
+  border-radius: 50%;
   outline: none;
   box-shadow: none !important;
   display: flex;
@@ -1550,14 +1550,17 @@ textarea.form-control-custom ~ .form-label-custom {
     margin: 0;
     padding: 6px 0 !important;
   }
-  .navbar-nav .theme-toggle-btn {
-    margin: 8px auto 0;
-  }
-  
   /* Prevent Slick Slider arrows from stretching page width on mobile */
   .projects-slider .slick-prev,
   .projects-slider .slick-next {
     display: none !important;
+  }
+}
+
+/* Desktop spacing for rearranged navbar actions wrapper */
+@media (min-width: 992px) {
+  .nav-actions-wrapper {
+    margin-left: 1.5rem;
   }
 }
 
