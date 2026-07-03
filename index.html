@@ -236,6 +236,18 @@
           </div>
         </div>
 
+        <!-- Headless Laravel (Backend) -->
+        <div class="skill-card" data-category="backend">
+          <div class="skill-card-top">
+            <i class="fa-brands fa-laravel skill-icon"></i>
+            <span class="skill-percentage">90%</span>
+          </div>
+          <div class="skill-name">Headless Laravel</div>
+          <div class="skill-progress-bg">
+            <div class="skill-progress-bar" data-val="90"></div>
+          </div>
+        </div>
+
         <!-- CodeIgniter (Backend) -->
         <div class="skill-card" data-category="backend">
           <div class="skill-card-top">
@@ -410,7 +422,7 @@
             <i class="fa-solid fa-code-branch skill-icon"></i>
             <span class="skill-percentage">88%</span>
           </div>
-          <div class="skill-name">Headless WordPress & REST API</div>
+          <div class="skill-name">WordPress Headless Applications</div>
           <div class="skill-progress-bg">
             <div class="skill-progress-bar" data-val="88"></div>
           </div>
@@ -626,6 +638,35 @@
       </div>
 
       <div class="projects-slider reveal">
+        <!-- Zoo Ticket Booking & QR Validation System -->
+        <div class="project-slide">
+          <div class="project-card">
+            <div class="project-img-wrapper">
+              <div class="project-img-fallback">
+                <i class="fa-solid fa-ticket"></i>
+                <h4 class="mb-0">Ticket Booking</h4>
+              </div>
+              <div class="project-img-overlay">
+                <button class="project-btn-icon" data-bs-toggle="modal" data-bs-target="#projectTicketBookingModal" aria-label="View Ticket Booking Project Details">
+                  <i class="fa-solid fa-eye"></i>
+                </button>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-tags">
+                <span class="project-tag">Laravel 11</span>
+                <span class="project-tag">PHP 8.2</span>
+                <span class="project-tag">MySQL 8</span>
+                <span class="project-tag">Razorpay API</span>
+              </div>
+              <h3 class="project-title">Ticket Booking & QR Validation System</h3>
+              <p class="project-desc">
+                Developed a Ticket Booking & QR Validation System with Laravel, PHP, etc. Features online booking, secure payments, QR code/PDF generation, and email alerts.
+              </p>
+            </div>
+          </div>
+        </div>
+
         <!-- Project 1 -->
         <div class="project-slide">
           <div class="project-card">
@@ -948,6 +989,7 @@
         <div class="col-lg-4 col-md-6 text-center text-md-start">
           <h4 class="footer-title">Featured Solutions</h4>
           <ul class="footer-links">
+            <li><a href="#projects">Ticket Booking & QR System</a></li>
             <li><a href="#projects">Peace9 Meditation System</a></li>
             <li><a href="#projects">Hotel Booking & Inventory ERP</a></li>
             <li><a href="#projects">Tour & Travel Management ERP</a></li>
@@ -973,6 +1015,63 @@
   <!-- -------------------------------------------------------------
        Project Modals (Premium Details)
   ------------------------------------------------------------- -->
+  <!-- Project Ticket Booking Modal: Ticket Booking & QR Validation System -->
+  <div class="modal fade" id="projectTicketBookingModal" tabindex="-1" aria-labelledby="projectTicketBookingModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content modal-content-premium">
+        <div class="modal-header modal-header-premium">
+          <h4 class="modal-title" id="projectTicketBookingModalLabel">Ticket Booking & QR Validation System</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body modal-body-premium">
+          <div class="row g-4">
+            <div class="col-md-5">
+              <div class="p-4 text-center rounded bg-body-tertiary d-flex flex-column align-items-center justify-content-center h-100">
+                <i class="fa-solid fa-ticket text-info mb-3" style="font-size: 4rem;"></i>
+                <h5 class="fw-bold">Ticket Booking & QR System</h5>
+                <span class="badge bg-primary mt-2">Active Production</span>
+                <ul class="list-unstyled text-start w-100 mt-4 border-top pt-3 text-secondary small">
+                  <li class="mb-2"><i class="fa-solid fa-clock me-2"></i><strong>Duration:</strong> 4 Months</li>
+                  <li class="mb-2"><i class="fa-solid fa-user-tie me-2"></i><strong>Role:</strong> Lead Developer</li>
+                  <li class="mb-2"><i class="fa-brands fa-github me-2"></i><strong>Git Link:</strong> <a href="https://github.com/debyendubhunia/Zoo-Ticket-Booking-System" target="_blank" rel="noopener noreferrer" class="text-info">GitHub Repo</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-7">
+              <h5 class="fw-bold mb-3">Technologies</h5>
+              <div class="project-tags mb-3">
+                <span class="project-tag">Laravel 11</span>
+                <span class="project-tag">PHP 8.2</span>
+                <span class="project-tag">MySQL 8</span>
+                <span class="project-tag">Bootstrap 5</span>
+                <span class="project-tag">JavaScript</span>
+                <span class="project-tag">jQuery</span>
+                <span class="project-tag">AJAX</span>
+                <span class="project-tag">Razorpay API</span>
+                <span class="project-tag">Dompdf</span>
+                <span class="project-tag">Simple QR Code</span>
+                <span class="project-tag">Laravel Breeze</span>
+              </div>
+              <p class="text-secondary mb-3 small"><strong>Architectural Overview:</strong> Built with Laravel 11, PHP 8.2, and clean MVC paradigms to deliver a secure, highly scalable online ticketing and entry validation engine.</p>
+              <h5 class="fw-bold mb-2">Key Architectural Achievements</h5>
+              <ul class="text-secondary ps-3 mb-4">
+                <li><strong>Online Booking & Razorpay Integration:</strong> Designed a seamless checkout flow integrated with the Razorpay API to process secure, real-time ticket payments.</li>
+                <li><strong>Secure QR Code & PDF Generation:</strong> Automated the dynamic creation of entry tickets as PDFs embedded with unique QR codes via Dompdf and Simple QR Code library.</li>
+                <li><strong>Real-Time Entry Validation:</strong> Engineered a mobile-friendly QR scanning interface with real-time validation to verify and process entry tickets at terminal gates.</li>
+                <li><strong>Role-Based Admin Dashboard:</strong> Developed dedicated administrative controls with Laravel Breeze to monitor booking queues, transaction records, and scan history logs.</li>
+                <li><strong>Scalable REST APIs:</strong> Built clean and responsive REST API endpoints to support mobile scanners, AJAX validation request calls, and email alert queues.</li>
+              </ul>
+              <div class="d-flex gap-2">
+                <a href="https://github.com/debyendubhunia/Zoo-Ticket-Booking-System" target="_blank" rel="noopener noreferrer" class="btn-premium btn-premium-primary py-2 px-3"><i class="fa-brands fa-github"></i> GitHub Repo</a>
+                <button type="button" class="btn-premium btn-premium-secondary py-2 px-3" data-bs-dismiss="modal">Close Details</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Project 1 Modal: Peace9 -->
   <div class="modal fade" id="project1Modal" tabindex="-1" aria-labelledby="project1ModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">
