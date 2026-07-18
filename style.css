@@ -1301,7 +1301,9 @@ textarea.form-control-custom {
 
 .form-control-custom:focus ~ .form-label-custom,
 .form-control-custom:not(:placeholder-shown) ~ .form-label-custom {
-  transform: translateY(-30px) scale(0.85);
+  transform: translate(-4px, -24px) scale(0.85);
+  background-color: var(--bg-primary);
+  padding: 0 6px;
   color: var(--accent-primary);
 }
 
@@ -1311,7 +1313,9 @@ textarea.form-control-custom {
   top: 18px;
   color: var(--text-muted);
   pointer-events: none;
-  transition: transform var(--transition-fast), color var(--transition-fast);
+  background-color: transparent;
+  padding: 0;
+  transition: transform var(--transition-fast), color var(--transition-fast), background-color var(--transition-fast), padding var(--transition-fast);
   transform-origin: left top;
   font-size: 0.95rem;
 }
